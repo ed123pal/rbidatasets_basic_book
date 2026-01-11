@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; starwars dataset – R Built-in Datasets: Basic Concepts</title>
+<title>1&nbsp; starwars dataset – R Built-in Datasets: Basic Concepts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060030.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">starwars dataset</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060030.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><code>starwars</code> dataset</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -160,37 +160,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060030.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">starwars dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><code>starwars</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060040.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">diamonds dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><code>diamonds</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060050.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060070.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -209,27 +209,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">2.1</span> Getting Started</a>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">1.1</span> Getting Started</a>
   <ul class="collapse">
-  <li><a href="#built-in-datasets" id="toc-built-in-datasets" class="nav-link" data-scroll-target="#built-in-datasets"><span class="header-section-number">2.1.1</span> built-in datasets</a></li>
+  <li><a href="#built-in-datasets" id="toc-built-in-datasets" class="nav-link" data-scroll-target="#built-in-datasets"><span class="header-section-number">1.1.1</span> built-in datasets</a></li>
   </ul></li>
-  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context"><span class="header-section-number">2.2</span> Context</a></li>
-  <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install"><span class="header-section-number">2.3</span> Install</a></li>
-  <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">2.4</span> Load</a></li>
-  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore"><span class="header-section-number">2.5</span> Explore</a>
+  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context"><span class="header-section-number">1.2</span> Context</a></li>
+  <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install"><span class="header-section-number">1.3</span> Install</a></li>
+  <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">1.4</span> Load</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore"><span class="header-section-number">1.5</span> Explore</a>
   <ul class="collapse">
-  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help"><span class="header-section-number">2.5.1</span> <code>help()</code></a></li>
-  <li><a href="#class" id="toc-class" class="nav-link" data-scroll-target="#class"><span class="header-section-number">2.5.2</span> <code>class()</code></a></li>
-  <li><a href="#other-functions" id="toc-other-functions" class="nav-link" data-scroll-target="#other-functions"><span class="header-section-number">2.5.3</span> Other functions</a></li>
+  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help"><span class="header-section-number">1.5.1</span> <code>help()</code></a></li>
+  <li><a href="#class" id="toc-class" class="nav-link" data-scroll-target="#class"><span class="header-section-number">1.5.2</span> <code>class()</code></a></li>
+  <li><a href="#other-functions" id="toc-other-functions" class="nav-link" data-scroll-target="#other-functions"><span class="header-section-number">1.5.3</span> Other functions</a></li>
   </ul></li>
-  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use"><span class="header-section-number">2.6</span> Use</a></li>
-  <li><a href="#dplyr" id="toc-dplyr" class="nav-link" data-scroll-target="#dplyr"><span class="header-section-number">2.7</span> <code>dplyr</code></a>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use"><span class="header-section-number">1.6</span> Use</a></li>
+  <li><a href="#dplyr" id="toc-dplyr" class="nav-link" data-scroll-target="#dplyr"><span class="header-section-number">1.7</span> <code>dplyr</code></a>
   <ul class="collapse">
-  <li><a href="#library" id="toc-library" class="nav-link" data-scroll-target="#library"><span class="header-section-number">2.7.1</span> <code>library()</code></a></li>
-  <li><a href="#dplyr-functions" id="toc-dplyr-functions" class="nav-link" data-scroll-target="#dplyr-functions"><span class="header-section-number">2.7.2</span> <code>dplyr</code> functions</a></li>
+  <li><a href="#library" id="toc-library" class="nav-link" data-scroll-target="#library"><span class="header-section-number">1.7.1</span> <code>library()</code></a></li>
+  <li><a href="#dplyr-functions" id="toc-dplyr-functions" class="nav-link" data-scroll-target="#dplyr-functions"><span class="header-section-number">1.7.2</span> <code>dplyr</code> functions</a></li>
   </ul></li>
-  <li><a href="#list-datasets" id="toc-list-datasets" class="nav-link" data-scroll-target="#list-datasets"><span class="header-section-number">2.8</span> List datasets</a></li>
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">2.9</span> Wrap-Up</a></li>
+  <li><a href="#list-datasets" id="toc-list-datasets" class="nav-link" data-scroll-target="#list-datasets"><span class="header-section-number">1.8</span> List datasets</a></li>
+  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">1.9</span> Wrap-Up</a></li>
   </ul>
 </nav>
     </div>
@@ -238,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">starwars dataset</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><code>starwars</code> dataset</span></h1>
 </div>
 
 
@@ -255,29 +255,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="getting-started" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">2.1</span> Getting Started</h2>
+<section id="getting-started" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">1.1</span> Getting Started</h2>
 <p>Think of this as your jump-start chapter. We’ll cover essential definitions and walk through simple code snippets so you can start working with built-in datasets right away.</p>
-<section id="built-in-datasets" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="built-in-datasets"><span class="header-section-number">2.1.1</span> built-in datasets</h3>
+<section id="built-in-datasets" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="built-in-datasets"><span class="header-section-number">1.1.1</span> built-in datasets</h3>
 <p>When you think of an R package, you’re most likely interested in the functions it contains.</p>
 <p>While functions are essential to R, be aware that many packages also contain datasets that you can use to practice R coding. Because these datasets are part of a package, they’re sometimes referred to as <em>built-in</em>.</p>
-<p>The starwars dataset contained in the dplyr package is popular.</p>
+<p>The <code>starwars</code> dataset contained in the <strong><code>dplyr</code></strong> package is popular.</p>
 </section>
 </section>
-<section id="context" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="context"><span class="header-section-number">2.2</span> Context</h2>
+<section id="context" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="context"><span class="header-section-number">1.2</span> Context</h2>
 <p>Imagine you are an avid Starwars fan and want to do some R coding with data about Starwars characters.</p>
-<p>So, what should you consider when using the starwars dataset?</p>
-<p>This chapter demonstrates and then introduces key concepts about using starwars specifically and built-in datasets in general.</p>
+<p>So, what should you consider when using the <code>starwars</code> dataset?</p>
+<p>This chapter demonstrates and then introduces key concepts about using <code>starwars</code> specifically and built-in datasets in general.</p>
 </section>
-<section id="install" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="install"><span class="header-section-number">2.3</span> Install</h2>
+<section id="install" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="install"><span class="header-section-number">1.3</span> Install</h2>
 <p>To use a dataset, the package that contains it must be installed.</p>
-<p>For this chapter, it’s assumed the dplyr package is installed. If it’s not run: install.packages(“dplyr”).</p>
+<p>For this chapter, it’s assumed the <code>dplyr</code> package is installed. If it’s not run: <code>install.packages("dplyr")</code>.</p>
 </section>
-<section id="load" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="load"><span class="header-section-number">2.4</span> Load</h2>
+<section id="load" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="load"><span class="header-section-number">1.4</span> Load</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(starwars, <span class="at">package =</span> <span class="st">"dplyr"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_starwars <span class="ot">&lt;-</span> starwars</span>
@@ -288,8 +288,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>These three lines of code represent a good practice for loading and preparing to use a dataset.</p>
 <p>1st line: requests the dataset be put into the global environment (dataset loaded into the session)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>data()</code> function is part of the <code>datasets</code> package, which will be discussed in a later chapter. The <code>datasets</code> package is automatically made available when an R session starts.</p>
+</div>
+</div>
 <p>2nd line: materializes <code>starwars</code> in the global environment and makes a copy named <code>my_starwars</code></p>
-<p>3rd line: lists the object now in the global environment</p>
+<p>3rd line: lists the objects now in the global environment</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -304,8 +317,8 @@ Note
 </div>
 </div>
 </section>
-<section id="explore" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="explore"><span class="header-section-number">2.5</span> Explore</h2>
+<section id="explore" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="explore"><span class="header-section-number">1.5</span> Explore</h2>
 <p>It’s a good practice to explore the structure and contents of a dataset before using it.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -320,8 +333,8 @@ Note
 <p>This book is not an Exploratory Data Analysis (EDA) primer, but I’ve included below several functions to help you get started with learning about a dataset.</p>
 </div>
 </div>
-<section id="help" class="level3" data-number="2.5.1">
-<h3 data-number="2.5.1" class="anchored" data-anchor-id="help"><span class="header-section-number">2.5.1</span> <code>help()</code></h3>
+<section id="help" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="help"><span class="header-section-number">1.5.1</span> <code>help()</code></h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="st">"starwars"</span>, <span class="at">package =</span> <span class="st">"dplyr"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
@@ -331,9 +344,8 @@ Note
 <p>When you run the code above, a new window titled “R: Starwars characters” is opened that displays information about the dataset. Here’s part of what you’ll see:</p>
 <p><img src="images/c060030_help_starwars.png" class="img-fluid"></p>
 </section>
-<section id="class" class="level3" data-number="2.5.2">
-<h3 data-number="2.5.2" class="anchored" data-anchor-id="class"><span class="header-section-number">2.5.2</span> <code>class()</code></h3>
-<p>Another important function to use right away is <code>class()</code>.</p>
+<section id="class" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="class"><span class="header-section-number">1.5.2</span> <code>class()</code></h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(starwars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -342,13 +354,13 @@ Note
 </div>
 <p>The code above shows that starwars is a tibble, which is a modern version of a data frame.</p>
 </section>
-<section id="other-functions" class="level3" data-number="2.5.3">
-<h3 data-number="2.5.3" class="anchored" data-anchor-id="other-functions"><span class="header-section-number">2.5.3</span> Other functions</h3>
+<section id="other-functions" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="other-functions"><span class="header-section-number">1.5.3</span> Other functions</h3>
 <p>There are many other functions you can use to explore the structure and contents of a dataset including: <code>dim()</code>, <code>str()</code>, <code>summary()</code>, <code>head(),</code> <code>unique()</code>, <code>and hist()</code>.</p>
 </section>
 </section>
-<section id="use" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="use"><span class="header-section-number">2.6</span> Use</h2>
+<section id="use" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="use"><span class="header-section-number">1.6</span> Use</h2>
 <p>Once a dataset is in the global environment, it can be read or updated.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>base_r_starwars <span class="ot">&lt;-</span> starwars[</span>
@@ -366,11 +378,11 @@ Note
 6      Owen Lars   Human</code></pre>
 </div>
 </div>
-<p>The code above uses base R functions to create a new tibble named <code>base_r_starwars</code>, which contains information only for humans and droids.</p>
+<p>The code above uses base R functions to create a new tibble named <code>base_r_starwars</code>, which contains information only for humans and droids. The <code>head()</code> function shows the first six rows.</p>
 </section>
-<section id="dplyr" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="dplyr"><span class="header-section-number">2.7</span> <code>dplyr</code></h2>
-<p>In the context of this chapter so far, imagine that you were just learning base R functions and using them on the <code>starwars</code> dataset. This means there has not been a neeed to make the entire <code>dplyr</code> package available to the R session.</p>
+<section id="dplyr" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="dplyr"><span class="header-section-number">1.7</span> <code>dplyr</code></h2>
+<p>In the context of this chapter so far, imagine that you were just learning base R functions and using them on the <code>starwars</code> dataset. This means there has not been a need to make the entire <code>dplyr</code> package available to the R session.</p>
 <p>Now, image you’ve decide to start learning <code>dplyr</code> functions. In particular, you’d like to again select information about humans and droids from <code>starwars</code>, but this time using <code>dplyr</code> functions instead of just base R functions.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -382,11 +394,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Recall that earlier you verified the <code>dplyr</code> package is installed. (Otherwise, you would not have been able to access its <code>starwars</code> dataset.)</p>
+<p>Recall that earlier you verified the <code>dplyr</code> package is installed.</p>
 </div>
 </div>
-<section id="library" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="library"><span class="header-section-number">2.7.1</span> <code>library()</code></h3>
+<section id="library" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="library"><span class="header-section-number">1.7.1</span> <code>library()</code></h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
@@ -406,8 +418,8 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 <p>The code above runs the <code>library()</code> function on <code>dplyr</code>, making the package available to the session.</p>
 </section>
-<section id="dplyr-functions" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="dplyr-functions"><span class="header-section-number">2.7.2</span> <code>dplyr</code> functions</h3>
+<section id="dplyr-functions" class="level3" data-number="1.7.2">
+<h3 data-number="1.7.2" class="anchored" data-anchor-id="dplyr-functions"><span class="header-section-number">1.7.2</span> <code>dplyr</code> functions</h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>dplyr_starwars <span class="ot">&lt;-</span> starwars <span class="sc">%&gt;%</span> <span class="fu">filter</span>(species <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Human"</span>, <span class="st">"Droid"</span>)) <span class="sc">%&gt;%</span> <span class="fu">select</span>(name, species)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dplyr_starwars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -423,25 +435,25 @@ Attaching package: 'dplyr'</code></pre>
 6 Owen Lars      Human  </code></pre>
 </div>
 </div>
-<p>The code above uses <code>dplyr</code> functions to create a new tibble named <code>dplyr_starwars</code>, which contains information only for humans and droids.</p>
+<p>The code above uses <code>dplyr</code> functions to do the same as shown above with base R functions.</p>
 </section>
 </section>
-<section id="list-datasets" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="list-datasets"><span class="header-section-number">2.8</span> List datasets</h2>
-<p>If you’ve found one dataset in a package that you like, it’s likely you might want to see if there are other datasets in that package.</p>
+<section id="list-datasets" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="list-datasets"><span class="header-section-number">1.8</span> List datasets</h2>
+<p>If you’ve found one dataset in a package that you like, you might want to see if there are other datasets in that package.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package =</span> <span class="st">"dplyr"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The code above shows another use for the data() function. Now data() lists the datasets available in a package.</p>
+<p>The code above shows another use for the <code>data()</code> . Here, this function is used to lists the datasets available in the <code>dplyr</code> package.</p>
 <p><img src="images/c060030_dplyr_datasets.png" class="img-fluid"></p>
 </section>
-<section id="wrap-up" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">2.9</span> Wrap-Up</h2>
+<section id="wrap-up" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">1.9</span> Wrap-Up</h2>
 <ul>
 <li><p>Many R packages include built-in datasets that are useful for learning and practicing R. These datasets are generally intended for instructional purposes, not for production data analysis.</p></li>
-<li><p>Before using any dataset, it is good practice to explore its structure, variables, and documentation</p></li>
-<li><p>In many cases, you will use <code>library()</code> to attach a package and make its functions available in your R session. In other situations, you may only want to load a dataset from a package into the global environment.</p></li>
-<li><p>The <code>data()</code> function is the standard and recommended way to load a dataset into the global environment.</p></li>
+<li><p>The <code>data()</code> function is the recommended way to load a dataset into the global environment.</p></li>
+<li><p>In many cases, you will decide to use <code>library()</code> to attach a package and make its functions and datasets available by name in your R session.</p></li>
+<li><p>Before using any dataset, it is good practice to explore its structure, content, and documentation.</p></li>
 <li><p>The <code>data()</code> function can also be used to list the datasets that are available in a package.</p></li>
 </ul>
 
@@ -852,12 +864,12 @@ Attaching package: 'dplyr'</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./introduction.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./c060040.html" class="pagination-link" aria-label="diamonds dataset">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">diamonds dataset</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./c060040.html" class="pagination-link" aria-label="`diamonds` dataset">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><code>diamonds</code> dataset</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

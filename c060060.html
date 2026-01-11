@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Workflow – R Built-in Datasets: Basic Concepts</title>
+<title>4&nbsp; Workflow – R Built-in Datasets: Basic Concepts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060060.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060060.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,37 +125,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060030.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">starwars dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><code>starwars</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060040.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">diamonds dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><code>diamonds</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060050.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060060.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060070.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -174,14 +174,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">5.1</span> Getting Started</a></li>
-  <li><a href="#identify" id="toc-identify" class="nav-link" data-scroll-target="#identify"><span class="header-section-number">5.2</span> Identify</a></li>
-  <li><a href="#installed" id="toc-installed" class="nav-link" data-scroll-target="#installed"><span class="header-section-number">5.3</span> Installed</a></li>
-  <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">5.4</span> Load</a></li>
-  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore"><span class="header-section-number">5.5</span> Explore</a></li>
-  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list"><span class="header-section-number">6</span> List</a>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">4.1</span> Getting Started</a></li>
+  <li><a href="#identify" id="toc-identify" class="nav-link" data-scroll-target="#identify"><span class="header-section-number">4.2</span> Identify</a></li>
+  <li><a href="#installed" id="toc-installed" class="nav-link" data-scroll-target="#installed"><span class="header-section-number">4.3</span> Installed</a></li>
+  <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">4.4</span> Load</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore"><span class="header-section-number">4.5</span> Explore</a></li>
+  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list"><span class="header-section-number">5</span> List</a>
   <ul class="collapse">
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">6.1</span> Wrap-up</a></li>
+  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">5.1</span> Wrap-up</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></h1>
 </div>
 
 
@@ -208,37 +208,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="getting-started" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">5.1</span> Getting Started</h2>
+<section id="getting-started" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">4.1</span> Getting Started</h2>
 <p>This chapter shows a built-in dataset workflow based on key points previously presented.</p>
 </section>
-<section id="identify" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="identify"><span class="header-section-number">5.2</span> Identify</h2>
+<section id="identify" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="identify"><span class="header-section-number">4.2</span> Identify</h2>
 <p>Decide on the dataset you want to use and which package it’s in.</p>
 </section>
-<section id="installed" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="installed"><span class="header-section-number">5.3</span> Installed</h2>
+<section id="installed" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="installed"><span class="header-section-number">4.3</span> Installed</h2>
 <p>Check if the package is installed. If not install it.</p>
-<p>install.packages(“packagename”)</p>
+<p><code>install.packages("packagename")</code></p>
 </section>
-<section id="load" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="load"><span class="header-section-number">5.4</span> Load</h2>
-<p>Run data() to put the dataset in the global environment.</p>
-<p>data(datasetname, package = “packagename”)</p>
+<section id="load" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="load"><span class="header-section-number">4.4</span> Load</h2>
+<p>Run <code>data()</code> to put the dataset in the global environment.</p>
+<p><code>data(datasetname, package = "packagename")</code></p>
 </section>
-<section id="explore" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="explore"><span class="header-section-number">5.5</span> Explore</h2>
+<section id="explore" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="explore"><span class="header-section-number">4.5</span> Explore</h2>
 <p>Make a copy of the dataset.</p>
-<p>my_datasetname &lt;- datasetname</p>
+<p><code>my_datasetname &lt;- datasetname</code></p>
 <p>Run functions on the copy to explore the dataset.</p>
 </section>
-<section id="list" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> List</h1>
-<p>Run data() to list the datasets in the package.</p>
+<section id="list" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> List</h1>
+<p>Run <code>data()</code> to list the datasets in the package.</p>
 <p><em>You might find other datasets in that package you like as well.</em></p>
-<p>data(package = “packagename”)</p>
-<section id="wrap-up" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">6.1</span> Wrap-up</h2>
+<p><code>data(package = "packagename")</code></p>
+<section id="wrap-up" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">5.1</span> Wrap-up</h2>
 <p>This bare-bones workflow will likely handle 80% of what you’ll need to do with built-in datasets.</p>
 
 
@@ -649,12 +649,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./c060050.html" class="pagination-link" aria-label="datasets package">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datasets package</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">datasets package</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./c060070.html" class="pagination-link" aria-label="Popular datasets">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

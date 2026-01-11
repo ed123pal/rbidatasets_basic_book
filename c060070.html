@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Popular datasets – R Built-in Datasets: Basic Concepts</title>
+<title>5&nbsp; Popular datasets – R Built-in Datasets: Basic Concepts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060070.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./c060070.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,37 +125,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060030.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">starwars dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><code>starwars</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060040.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">diamonds dataset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><code>diamonds</code> dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060050.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">datasets package</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./c060070.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -174,30 +174,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">6.1</span> Getting started</a></li>
-  <li><a href="#datasets-package" id="toc-datasets-package" class="nav-link" data-scroll-target="#datasets-package"><span class="header-section-number">6.2</span> datasets package</a>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">5.1</span> Getting started</a></li>
+  <li><a href="#datasets-package" id="toc-datasets-package" class="nav-link" data-scroll-target="#datasets-package"><span class="header-section-number">5.2</span> <code>datasets</code> package</a>
   <ul class="collapse">
-  <li><a href="#iris" id="toc-iris" class="nav-link" data-scroll-target="#iris"><span class="header-section-number">6.2.1</span> iris</a></li>
-  <li><a href="#mtcars" id="toc-mtcars" class="nav-link" data-scroll-target="#mtcars"><span class="header-section-number">6.2.2</span> mtcars</a></li>
-  <li><a href="#usarrests" id="toc-usarrests" class="nav-link" data-scroll-target="#usarrests"><span class="header-section-number">6.2.3</span> USArrests</a></li>
-  <li><a href="#airquality" id="toc-airquality" class="nav-link" data-scroll-target="#airquality"><span class="header-section-number">6.2.4</span> airquality</a></li>
-  <li><a href="#airpassengers" id="toc-airpassengers" class="nav-link" data-scroll-target="#airpassengers"><span class="header-section-number">6.2.5</span> AirPassengers</a></li>
+  <li><a href="#iris" id="toc-iris" class="nav-link" data-scroll-target="#iris"><span class="header-section-number">5.2.1</span> <code>iris</code></a></li>
+  <li><a href="#mtcars" id="toc-mtcars" class="nav-link" data-scroll-target="#mtcars"><span class="header-section-number">5.2.2</span> <code>mtcars</code></a></li>
+  <li><a href="#usarrests" id="toc-usarrests" class="nav-link" data-scroll-target="#usarrests"><span class="header-section-number">5.2.3</span> <code>USArrests</code></a></li>
+  <li><a href="#airquality" id="toc-airquality" class="nav-link" data-scroll-target="#airquality"><span class="header-section-number">5.2.4</span> <code>airquality</code></a></li>
+  <li><a href="#airpassengers" id="toc-airpassengers" class="nav-link" data-scroll-target="#airpassengers"><span class="header-section-number">5.2.5</span> <code>AirPassengers</code></a></li>
   </ul></li>
-  <li><a href="#recommended-packages" id="toc-recommended-packages" class="nav-link" data-scroll-target="#recommended-packages"><span class="header-section-number">6.3</span> Recommended packages</a>
+  <li><a href="#recommended-packages" id="toc-recommended-packages" class="nav-link" data-scroll-target="#recommended-packages"><span class="header-section-number">5.3</span> Recommended packages</a>
   <ul class="collapse">
-  <li><a href="#mass" id="toc-mass" class="nav-link" data-scroll-target="#mass"><span class="header-section-number">6.3.1</span> MASS</a></li>
+  <li><a href="#mass" id="toc-mass" class="nav-link" data-scroll-target="#mass"><span class="header-section-number">5.3.1</span> <code>MASS</code></a></li>
   </ul></li>
-  <li><a href="#add-on-packages" id="toc-add-on-packages" class="nav-link" data-scroll-target="#add-on-packages"><span class="header-section-number">6.4</span> Add-on packages</a>
+  <li><a href="#add-on-packages" id="toc-add-on-packages" class="nav-link" data-scroll-target="#add-on-packages"><span class="header-section-number">5.4</span> Add-on packages</a>
   <ul class="collapse">
-  <li><a href="#penguins" id="toc-penguins" class="nav-link" data-scroll-target="#penguins"><span class="header-section-number">6.4.1</span> penguins</a></li>
-  <li><a href="#diamonds" id="toc-diamonds" class="nav-link" data-scroll-target="#diamonds"><span class="header-section-number">6.4.2</span> diamonds</a></li>
-  <li><a href="#flights" id="toc-flights" class="nav-link" data-scroll-target="#flights"><span class="header-section-number">6.4.3</span> flights</a></li>
-  <li><a href="#gapminder" id="toc-gapminder" class="nav-link" data-scroll-target="#gapminder"><span class="header-section-number">6.4.4</span> gapminder</a></li>
-  <li><a href="#islr" id="toc-islr" class="nav-link" data-scroll-target="#islr"><span class="header-section-number">6.4.5</span> ISLR</a></li>
-  <li><a href="#starwars" id="toc-starwars" class="nav-link" data-scroll-target="#starwars"><span class="header-section-number">6.4.6</span> starwars</a></li>
-  <li><a href="#ebird_taxonomy" id="toc-ebird_taxonomy" class="nav-link" data-scroll-target="#ebird_taxonomy"><span class="header-section-number">6.4.7</span> ebird_taxonomy</a></li>
+  <li><a href="#penguins" id="toc-penguins" class="nav-link" data-scroll-target="#penguins"><span class="header-section-number">5.4.1</span> <code>penguins</code></a></li>
+  <li><a href="#diamonds" id="toc-diamonds" class="nav-link" data-scroll-target="#diamonds"><span class="header-section-number">5.4.2</span> <code>diamonds</code></a></li>
+  <li><a href="#flights" id="toc-flights" class="nav-link" data-scroll-target="#flights"><span class="header-section-number">5.4.3</span> <code>flights</code></a></li>
+  <li><a href="#gapminder" id="toc-gapminder" class="nav-link" data-scroll-target="#gapminder"><span class="header-section-number">5.4.4</span> <code>gapminder</code></a></li>
+  <li><a href="#islr" id="toc-islr" class="nav-link" data-scroll-target="#islr"><span class="header-section-number">5.4.5</span> <code>ISLR</code></a></li>
+  <li><a href="#starwars" id="toc-starwars" class="nav-link" data-scroll-target="#starwars"><span class="header-section-number">5.4.6</span> <code>starwars</code></a></li>
+  <li><a href="#ebird_taxonomy" id="toc-ebird_taxonomy" class="nav-link" data-scroll-target="#ebird_taxonomy"><span class="header-section-number">5.4.7</span> ebird_taxonomy</a></li>
   </ul></li>
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">6.5</span> Wrap-up</a></li>
+  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">5.5</span> Wrap-up</a></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Popular datasets</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Popular datasets</span></h1>
 </div>
 
 
@@ -223,51 +223,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="getting-started" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">6.1</span> Getting started</h2>
-<p>You’ll often discover datasets through tutorials, course materials, or recommendations from others. If those sources aren’t enough, you may also search for datasets online or use your favorite large language model to suggest options.</p>
-<p>When choosing a dataset, it’s useful to first consider where it comes from. Some datasets are included in the base R installation, while others are provided by add-on packages that must be installed separately. In particular, datasets in the datasets package are a good place to start, since this package is installed with R and is immediately available in every R session.</p>
-<p>To help you get started, this chapter introduces several built-in datasets from the datasets package, along with a few examples from commonly used add-on packages. These datasets are well suited for learning and practicing R programming concepts.</p>
+<section id="getting-started" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">5.1</span> Getting started</h2>
+<p>You’ll often discover datasets through tutorials, course materials, or recommendations from others. If those sources aren’t enough, you may also search for datasets online or ask your favorite large language model (LLM) to suggest options.</p>
+<p>When choosing a dataset, it’s useful to first consider where it comes from. Some datasets are included in the base R installation, while others are provided by add-on packages that must be installed separately. In particular, datasets in the <code>datasets</code> package are a good place to start, since this package is installed with R and is immediately available in every R session.</p>
+<p>To help you get started with seeing the potential of built-in datasets, this chapter introduces several built-in datasets from the <code>datasets</code> package, along with a few examples from commonly used add-on packages. These datasets are well suited for learning and practicing R programming concepts.</p>
 </section>
-<section id="datasets-package" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="datasets-package"><span class="header-section-number">6.2</span> datasets package</h2>
+<section id="datasets-package" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="datasets-package"><span class="header-section-number">5.2</span> <code>datasets</code> package</h2>
 <p>While official usage statistics for the built-in datasets are not published. The datasets shown below are generally considered as popular based on their frequent appearance in R tutorials, examples, and statistical literature.</p>
-<section id="iris" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="iris"><span class="header-section-number">6.2.1</span> iris</h3>
+<section id="iris" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="iris"><span class="header-section-number">5.2.1</span> <code>iris</code></h3>
 <p>Description: This classic dataset, introduced by Sir Ronald Fisher, contains measurements in centimeters of the sepal length, sepal width, petal length, and petal width for 50 flowers from each of three species of iris: Iris setosa, versicolor, and virginica.</p>
 <p>Popularity: It is arguably the most famous dataset in machine learning and statistics, widely used for introducing classification problems and concepts like cluster analysis.</p>
 </section>
-<section id="mtcars" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="mtcars"><span class="header-section-number">6.2.2</span> mtcars</h3>
+<section id="mtcars" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="mtcars"><span class="header-section-number">5.2.2</span> <code>mtcars</code></h3>
 <p>Description: This dataset comprises fuel consumption and 10 other aspects of automobile design and performance for 32 automobiles (1973–74 models) from the 1974 Motor Trend US magazine.</p>
 <p>Popularity: It’s frequently used for illustrating regression analysis (especially multiple linear regression) and comparisons between different car characteristics.</p>
 </section>
-<section id="usarrests" class="level3" data-number="6.2.3">
-<h3 data-number="6.2.3" class="anchored" data-anchor-id="usarrests"><span class="header-section-number">6.2.3</span> USArrests</h3>
+<section id="usarrests" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="usarrests"><span class="header-section-number">5.2.3</span> <code>USArrests</code></h3>
 <p>Description: This data set contains statistics about violent crime rates (Murder, Assault, and Rape) in each of the 50 US states in 1973, along with the percentage of the urban population.</p>
 <p>Popularity: It’s a common example for demonstrating principal component analysis (PCA), cluster analysis, and other multivariate statistical techniques.</p>
 </section>
-<section id="airquality" class="level3" data-number="6.2.4">
-<h3 data-number="6.2.4" class="anchored" data-anchor-id="airquality"><span class="header-section-number">6.2.4</span> airquality</h3>
+<section id="airquality" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="airquality"><span class="header-section-number">5.2.4</span> <code>airquality</code></h3>
 <p>Description: This dataset provides daily air quality measurements in New York City from May to September 1973, including Ozone, Solar Radiation, Wind, and Temperature.</p>
 <p>Popularity: It’s often used for learning about handling missing data (NA values), basic data exploration, and simple time-series analysis.</p>
 </section>
-<section id="airpassengers" class="level3" data-number="6.2.5">
-<h3 data-number="6.2.5" class="anchored" data-anchor-id="airpassengers"><span class="header-section-number">6.2.5</span> AirPassengers</h3>
+<section id="airpassengers" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="airpassengers"><span class="header-section-number">5.2.5</span> <code>AirPassengers</code></h3>
 <p>Description: A classic time-series dataset recording the monthly total number of international airline passengers from 1949 to 1960.</p>
 <p>Popularity: It’s an essential dataset for introducing time series analysis, including concepts like trend, seasonality, and forecasting models like ARIMA.</p>
 </section>
 </section>
-<section id="recommended-packages" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="recommended-packages"><span class="header-section-number">6.3</span> Recommended packages</h2>
-<p>Some packages that come with the standard R installation are not automatically loaded when an R session starts up. These packages are referred to as “recommended packages”. They are high-quality, widely-used packages the R Core Team consideres essential for most users. The MASS package is a famous example of this type of package. Others include lattice, mgcv and nlme. Below are details about MASS.</p>
-<section id="mass" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="mass"><span class="header-section-number">6.3.1</span> MASS</h3>
-<p>Here, I want to point out the MASS package because there’s sometimes confusion about this package for a couple of reasons.</p>
-<p>Sometimes, people will refer to the MASS dataset, but it’s a package that contains datasets. This is similar to how the datasets package contains many datasets.</p>
-<p>Be aware though, the MASS package contains many modern versions of functions that were previously used from the base R stats package. Think of <strong>stats</strong> as the standard toolbox and <strong>MASS</strong> as the professional upgrade—designed to handle messy, real-world data that violates the strict assumptions of classical statistics.</p>
-<p>The MASS package is a <strong>recommended</strong> package, meaning it’s installed with base R, but you’ll need to run library(MASS) to make it available to your R session.</p>
-<p>Below a few of the most frequently used MASS datasets:</p>
+<section id="recommended-packages" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="recommended-packages"><span class="header-section-number">5.3</span> Recommended packages</h2>
+<p>Some packages that come with the standard R installation are not automatically loaded when an R session starts up. These packages are referred to as <strong>recommended</strong> packages. They are high-quality, widely-used packages the R Core Team considers essential for most users. The MASS package is a famous example of this type of package. Others include lattice, mgcv and nlme. Below are details about MASS.</p>
+<section id="mass" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="mass"><span class="header-section-number">5.3.1</span> <code>MASS</code></h3>
+<p>Here, I want to point out the <code>MASS</code> package because there’s sometimes confusion about this package for a couple of reasons.</p>
+<p>Often, people will refer to a “MASS” dataset, but it’s not a dataset. Rather, <code>MASS</code> is a package that contains datasets. This is similar to how the <code>datasets</code> package contains many datasets.</p>
+<p>What’s important to know is the <code>MASS</code> package contains both datasets and functions. Specifically, it contains modern versions of many functions that were previously used from the base R stats package. Think of <strong>stats</strong> as the (legacy) standard toolbox package and <strong>MASS</strong> as the professional upgrade. It’s designed to handle messy, real-world data that violates the strict assumptions of classical statistics.</p>
+<p>The <code>MASS</code> package is a <strong>recommended</strong> package, meaning it’s installed with base R, but you’ll need to run l<code>ibrary(MASS)</code> to make it available to your R session.</p>
+<p>Below a few of the most frequently used <code>MASS</code> datasets:</p>
 <ul>
 <li><p><strong><code>Cars93</code></strong>: Data on 93 car models from 1993.</p></li>
 <li><p><strong><code>mammals</code></strong>: Brain and body weights for 62 species of land mammals.</p></li>
@@ -284,49 +284,49 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The Boston dataset was historically the most famous MASS dataset, but it was removed due to ethical concerns regarding the use of variables involving racial proportions. If needed, it can be found in the ISLR2 and spdep packages.</p>
-<p>I’ve included this callout to draw attention that it’s sometimes appropriate to consider the sournce and content of data in built-in datasets.</p>
+<p>The <code>Boston</code> dataset was historically the most famous <code>MASS</code> dataset, but it was removed due to ethical concerns regarding the use of variables involving racial proportions. If needed, it can be found in the ISLR2 and spdep packages.</p>
+<p>I’ve included this callout to draw attention that it’s sometimes appropriate to consider the source and content of data in built-in datasets.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="add-on-packages" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="add-on-packages"><span class="header-section-number">6.4</span> Add-on packages</h2>
-<p>Packages that are not categorized as “base” or “recommened” are referred to as add-on packages. These packages are not part of the standard R installation. The most likely source for these packages is CRAN, but some are sourced from other places such as Bioconductor or various GitHub repositories.</p>
+<section id="add-on-packages" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="add-on-packages"><span class="header-section-number">5.4</span> Add-on packages</h2>
+<p>Packages that are not categorized as <strong>base</strong> or <strong>recommended</strong> are referred to as <strong>add-on</strong> packages. These packages are not part of the standard R installation. The most likely source for these packages is CRAN, but some are sourced from other places such as Bioconductor or various GitHub repositories.</p>
 <p>Based on use patterns in multiple learning resources, several datasets contained in R add-on packages, such as the ones listed below, are also very popular.</p>
-<section id="penguins" class="level3" data-number="6.4.1">
-<h3 data-number="6.4.1" class="anchored" data-anchor-id="penguins"><span class="header-section-number">6.4.1</span> penguins</h3>
-<p>Package: palmerpenguins</p>
+<section id="penguins" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="penguins"><span class="header-section-number">5.4.1</span> <code>penguins</code></h3>
+<p>Package: <code>palmerpenguins</code></p>
 <p>Description: Size measurements (bill length, bill depth, flipper length, body mass) for 344 penguins representing three species (Adélie, Chinstrap, and Gentoo) from three islands in the Palmer Archipelago, Antarctica.</p>
-<p>Popularity: It was specifically designed as a modern, more ethically sound, and approachable replacement for the iris dataset. It is popular because it includes missing values (NAs) and more obvious species clusters, making it perfect for teaching data cleaning and visualization.</p>
+<p>Popularity: It was specifically designed as a modern, more ethically sound, and approachable replacement for the <code>iris</code> dataset. It is popular because it includes missing values (NAs) and more obvious species clusters, making it perfect for teaching data cleaning and visualization.</p>
 </section>
-<section id="diamonds" class="level3" data-number="6.4.2">
-<h3 data-number="6.4.2" class="anchored" data-anchor-id="diamonds"><span class="header-section-number">6.4.2</span> diamonds</h3>
-<p>Package: ggplot2</p>
+<section id="diamonds" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="diamonds"><span class="header-section-number">5.4.2</span> <code>diamonds</code></h3>
+<p>Package: <code>ggplot2</code></p>
 <p>Description: This dataset contains the prices and other attributes (carat, cut, color, clarity, and dimensions) of nearly 54,000 round-cut diamonds.</p>
-<p>Popularity: It is the primary dataset used to teach ggplot2. Because of its relatively large size (~54k rows), it is excellent for showing how to handle overplotting, identifying non-linear relationships, and demonstrating the impact of categorical variables on price.</p>
+<p>Popularity: It is the primary dataset used to teach <code>ggplot2</code>. Because of its relatively large size (~54k rows), it is excellent for showing how to handle overplotting, identifying non-linear relationships, and demonstrating the impact of categorical variables on price.</p>
 </section>
-<section id="flights" class="level3" data-number="6.4.3">
-<h3 data-number="6.4.3" class="anchored" data-anchor-id="flights"><span class="header-section-number">6.4.3</span> flights</h3>
-<p>Package: nycflights13</p>
-<p>Description: On-time data for all 336,776 flights that departed from New York City (JFK, LGA, EWR) in 2013. It is often used alongside other tables in the package like weather, planes, and airports.</p>
+<section id="flights" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="flights"><span class="header-section-number">5.4.3</span> <code>flights</code></h3>
+<p>Package: <code>nycflights13</code></p>
+<p>Description: On-time data for all 336,776 flights that departed from New York City (JFK, LGA, EWR) in 2013. It is often used alongside other tables in the <code>nycflights13</code> package like weather, planes, and airports.</p>
 <p>Popularity: It is the “go-to” dataset for teaching data wrangling with dplyr. Its massive scale and relational structure (requiring joins between different tables) make it ideal for learning how to manipulate, filter, and summarize complex real-world data.</p>
 </section>
-<section id="gapminder" class="level3" data-number="6.4.4">
-<h3 data-number="6.4.4" class="anchored" data-anchor-id="gapminder"><span class="header-section-number">6.4.4</span> gapminder</h3>
-<p>Package: gapminder</p>
+<section id="gapminder" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="gapminder"><span class="header-section-number">5.4.4</span> <code>gapminder</code></h3>
+<p>Package: <code>gapminder</code></p>
 <p>Description: An excerpt of the Gapminder data on life expectancy, GDP per capita, and population by country and continent over time (from 1952 to 2007 in increments of 5 years).</p>
-<p>Popularity: Made famous by Hans Rosling’s TED talks, this dataset is widely used to teach time-series visualization and animation (using gganimate). It helps users understand how to map aesthetics like size and color to multiple dimensions of data.</p>
+<p>Popularity: Made famous by Hans Rosling’s TED talks, this dataset is widely used to teach time-series visualization and animation (using <code>gganimate</code>). It helps users understand how to map aesthetics like size and color to multiple dimensions of data.</p>
 </section>
-<section id="islr" class="level3" data-number="6.4.5">
-<h3 data-number="6.4.5" class="anchored" data-anchor-id="islr"><span class="header-section-number">6.4.5</span> ISLR</h3>
-<p>Packages: ISLR and ISLR2</p>
+<section id="islr" class="level3" data-number="5.4.5">
+<h3 data-number="5.4.5" class="anchored" data-anchor-id="islr"><span class="header-section-number">5.4.5</span> <code>ISLR</code></h3>
+<p>Packages: <code>ISLR</code> and <code>ISLR2</code></p>
 <p>Description: Wage and other health/demographic data for 3,000 male workers in the Mid-Atlantic region of the US.</p>
-<p>Popularity: As the companion dataset for the influential book An Introduction to Statistical Learning, it is the standard for teaching regression modeling, splines, and cross-validation. It provides a realistic scenario for predicting a continuous variable (income) using a mix of numerical and categorical predictors.</p>
+<p>Popularity: As the companion dataset for the influential book <em>An Introduction to Statistical Learning</em>, it is the standard for teaching regression modeling, splines, and cross-validation. It provides a realistic scenario for predicting a continuous variable (income) using a mix of numerical and categorical predictors.</p>
 </section>
-<section id="starwars" class="level3" data-number="6.4.6">
-<h3 data-number="6.4.6" class="anchored" data-anchor-id="starwars"><span class="header-section-number">6.4.6</span> starwars</h3>
-<p>While the starwars dataset is technically an add-on dataset, it can also be referred to as a “special-interest” dataset.</p>
+<section id="starwars" class="level3" data-number="5.4.6">
+<h3 data-number="5.4.6" class="anchored" data-anchor-id="starwars"><span class="header-section-number">5.4.6</span> <code>starwars</code></h3>
+<p>While the <code>starwars</code> dataset is technically an add-on dataset, it can also be referred to as a “special-interest” dataset.</p>
 <p>Sometimes you’ll be drawn to a specific add-on dataset due to special personal or professional interests. For example, many people became fans of the Starwars franchise early in life so working with data about its characters is fun for them as adults.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -339,47 +339,33 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Information is given below for two special-interest datasets. Significant details are provided here as an example of how an LLM (in this case Gemini) can be used to provide a detailed description a dataset.</p>
+<p>A key point that becomes clear below is that datasets in the <code>auk</code> package are unlike most built-in datasets because <code>auk</code> is well-maintained and is used for serious research (even though it can also be used for practicing R coding).</p>
 </div>
 </div>
 <p><u>Package:</u></p>
-<p>dplyr</p>
+<p><code>dplyr</code></p>
 <p><u>Description:</u></p>
 <p>The starwars dataset is a <strong>tibble</strong> (a modern version of a data frame) containing information on characters from the Star Wars films. It includes 14 variables:</p>
 <p>Physical Traits: Name, height (cm), mass (kg), hair color, skin color, and eye color.</p>
 <p>Demographics: Birth year, biological sex, gender, and homeworld.</p>
 <p>Species: The species of the character (e.g., Human, Droid, Wookiee).</p>
-<p>List-Columns: This is its most unique feature. It contains three columns—<strong>films</strong>, <strong>vehicles</strong>, and <strong>starships</strong>—where each “cell” actually contains a list of items rather than a single value.</p>
+<p>List-Columns: This is its most unique feature. It contains three columns (films, vehicles, and starships) where each “cell” actually contains a list of items rather than a single value.</p>
 <p><u>Popularity:</u></p>
-<p>The <code>starwars</code> dataset isn’t just popular because people like the movies; it is strategically designed to teach <strong>modern data science workflows</strong> that older datasets like <code>iris</code> simply cannot handle.</p>
+<p>The <code>starwars</code> dataset isn’t just popular because people like the Starwars movies; it is strategically designed to teach <strong>modern data science workflows</strong> that older datasets like <code>iris</code> simply cannot handle.</p>
 <p>Teaching “List-Columns”</p>
 <p>Most traditional datasets are “flat” (one value per cell). However, in the real world, data is often nested (like JSON). Because a character like Obi-Wan Kenobi appears in multiple films and flies multiple starships, those columns contain lists. This makes <code>starwars</code> the gold standard for teaching the <code>nest()</code>, <code>unnest()</code>, and <code>purrr</code> map functions.</p>
 <p>Mastering Categorical Data</p>
-<p>The dataset contains many categorical variables with many levels (like <code>homeworld</code> or <code>species</code>). It is excellent for practicing with the <strong>forcats</strong> package—learning how to lump rare categories together (e.g., “Other”) or reorder factors for better visualization.</p>
+<p>The dataset contains many categorical variables with many levels (like <code>homeworld</code> or <code>species</code>). It is excellent for practicing with the <code>forcats</code> package, providing a chance to learn how to lump rare categories together (e.g., “Other”) or reorder factors for better visualization.</p>
 <p>Real-World “Messiness”</p>
 <p>Unlike the perfectly curated <code>iris</code> dataset, <code>starwars</code> is intentionally “messy”:</p>
 <p>Missing Values (NAs): Droids like R2-D2 don’t have “hair color” or a “birth year,” and Jabba the Hutt doesn’t have a “gender” in the same way humans do. This forces students to learn how to handle <code>NA</code> values using <code>filter()</code> or <code>replace_na()</code>.</p>
 <p>Variable Types: It includes character strings, numbers, and lists, providing a comprehensive workout for data cleaning.</p>
-<p>The “Tidyverse” Native</p>
-<p>Because it is a <strong>tibble</strong>, it behaves exactly as the Tidyverse expects. When you print it, it tells you the data types (e.g., <code>&lt;chr&gt;</code>, <code>&lt;int&gt;</code>, <code>&lt;list&gt;</code>) and only shows the first 10 rows, making it much more user-friendly for beginners than standard data frames that might flood the console with thousands of lines.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Even though starwars is especially designed to illustrate features of Tidyverse packages, it’s also a good dataset for students to use if they want to first write code and base R and then rewrite the code using Tidyverse functions.</p>
-</div>
-</div>
 </section>
-<section id="ebird_taxonomy" class="level3" data-number="6.4.7">
-<h3 data-number="6.4.7" class="anchored" data-anchor-id="ebird_taxonomy"><span class="header-section-number">6.4.7</span> ebird_taxonomy</h3>
-<p>Another example of a special-interest dataset is the ebird_taxonomy dataset.</p>
+<section id="ebird_taxonomy" class="level3" data-number="5.4.7">
+<h3 data-number="5.4.7" class="anchored" data-anchor-id="ebird_taxonomy"><span class="header-section-number">5.4.7</span> ebird_taxonomy</h3>
+<p>Another example of a special-interest dataset is the <code>ebird_taxonomy</code> dataset.</p>
 <p><u>Package:</u></p>
-<p>auk</p>
+<p><code>auk</code></p>
 <p><u>Description:</u></p>
 <p>This dataset provides a complete list of all bird species and recognizable forms (subspecies, hybrids, etc.) recognized by the <strong>Clements Checklist</strong>, which is the global taxonomic standard used by eBird.</p>
 <p>It typically contains several key variables:</p>
@@ -410,20 +396,21 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The auk package is renowned for its use in ornithology. It has more than just the ebird_taxonomy datasets as well as important functions for performing data analysis.</p>
-<p>While many (likely most) of the built-in datasets you’ll use will be “play” datasets for learning R, datasets in the auk package are examples of of how some datasets contained in R packages are used more for serious research.</p>
+<p>Again, a reminder about why <code>auk</code> datasets are truly an example of a distinguished set of special interest datasets:</p>
+<p>The <code>auk</code> package is renowned for its use in ornithology. It has more than just the <code>ebird_taxonomy</code> datasets as well as important functions for performing data analysis.</p>
+<p>While many (likely most) of the built-in datasets you’ll use will be “play” datasets for learning R, datasets in the <code>auk</code> package are examples of of how some datasets contained in R packages are used for serious research.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="wrap-up" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">6.5</span> Wrap-up</h2>
-<p>There’s a wide assortment of datasets available in many R packages. Typically, you’ll become aware of ones you’ll first use through R tutorials and books.</p>
-<p>The datasets package contains commonly used and easily-accessed datasets for learning R. The vast number of R add-on packages offer both popular and special interest datasets.</p>
-<p>Regardless of its source, it’s a good practice to gather at least a minimal amount of information about the dataset before using it.</p>
-<p>You’ll often discover datasets through tutorials, course materials, or recommendations from others. If those sources aren’t enough, you may also search for datasets online or use your favorite large language model to suggest options.</p>
-<p>When choosing a dataset, it’s useful to first consider where it comes from. Some datasets are included in the base R installation, while others are provided by add-on packages that must be installed separately. In particular, datasets in the datasets package are a good place to start, since this package is installed with R and is immediately available in every R session.</p>
-<p>To help you get started, this chapter introduces several built-in datasets from the datasets package, along with a few examples from commonly used add-on packages. These datasets are well suited for learning and practicing R programming concepts.</p>
+<section id="wrap-up" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">5.5</span> Wrap-up</h2>
+<p>There’s a wide assortment of built-in datasets available in many R packages. Typically, you’ll become aware of ones you’ll first use through R tutorials and books.</p>
+<p>The <code>datasets</code> package contains commonly used and easily-accessed datasets for learning R. The vast number of R add-on packages offer both popular and special interest datasets.</p>
+<p>Regardless of its source, it’s a good practice to gather at least a minimal amount of information about a dataset before using it.</p>
+<p>You’ll often discover datasets through tutorials, course materials, or recommendations from others. If those sources aren’t enough, you may also search for datasets online or use your favorite LLM to suggest options.</p>
+<p>When choosing a dataset, it’s useful to first consider where it comes from. Some datasets are included in the base R installation, while others are provided by add-on packages that must be installed separately. In particular, datasets in the <code>datasets</code> package are a good place to start, since this package is installed with R and is immediately available in every R session.</p>
+<p>To help you get started, this chapter introduces several built-in datasets from the <code>datasets</code> package, along with a few examples from commonly used add-on packages. These datasets are well suited for learning and practicing R programming concepts.</p>
 
 
 </section>
@@ -832,7 +819,7 @@ Note
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./c060060.html" class="pagination-link" aria-label="Workflow">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Workflow</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Workflow</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
