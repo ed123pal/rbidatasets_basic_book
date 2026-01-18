@@ -219,7 +219,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#class" id="toc-class" class="nav-link" data-scroll-target="#class"><span class="header-section-number">3.4.3</span> <code>class()</code></a></li>
   </ul></li>
   <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">3.5</span> Load</a></li>
-  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use"><span class="header-section-number">3.6</span> Use</a></li>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use"><span class="header-section-number">3.6</span> Use</a>
+  <ul class="collapse">
+  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r"><span class="header-section-number">3.6.1</span> base R</a></li>
+  <li><a href="#dplyr" id="toc-dplyr" class="nav-link" data-scroll-target="#dplyr"><span class="header-section-number">3.6.2</span> <code>dplyr</code></a></li>
+  </ul></li>
   <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">3.7</span> Wrap-up</a>
   <ul class="collapse">
   <li><a href="#built-in" id="toc-built-in" class="nav-link" data-scroll-target="#built-in"><span class="header-section-number">3.7.1</span> Built-in</a></li>
@@ -348,8 +352,8 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <section id="use" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="use"><span class="header-section-number">3.6</span> Use</h2>
 <p>Using <code>my_mtcars</code> in R code is straightforward.</p>
-<section id="base-r" class="level4" data-number="3.6.0.1">
-<h4 data-number="3.6.0.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">3.6.0.1</span> base R</h4>
+<section id="base-r" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">3.6.1</span> base R</h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">rownames</span>(my_mtcars)[my_mtcars<span class="sc">$</span>cyl <span class="sc">==</span> <span class="dv">8</span>],</span>
@@ -376,8 +380,8 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 </div>
 <p>The code above selects a few columns and filters for rows where the engine has 8 cylinders.</p>
 </section>
-<section id="dplyr" class="level4" data-number="3.6.0.2">
-<h4 data-number="3.6.0.2" class="anchored" data-anchor-id="dplyr"><span class="header-section-number">3.6.0.2</span> <code>dplyr</code></h4>
+<section id="dplyr" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="dplyr"><span class="header-section-number">3.6.2</span> <code>dplyr</code></h3>
 <p>Even though datasets in the datasets package are often used for learning base R, keep in mind their value for learning functions in many packages, such as <code>dplyr</code>.</p>
 <p>First, make <code>dplyr</code> available to the session.</p>
 <div class="cell">
@@ -860,19 +864,6 @@ Note
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Copyright © 2026 Ed Pal All rights reserved.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 

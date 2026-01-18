@@ -10,11 +10,21 @@
     ]
   },
   {
+    "objectID": "index.html#feedback",
+    "href": "index.html#feedback",
+    "title": "R Built-in Datasets: Basic Concepts",
+    "section": "Feedback",
+    "text": "Feedback\nPlease share your feedback about this book. Your comments and suggestions for improvement will be appreciated. Just drop me note at ed123pal@gmail.com.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
     "objectID": "index.html#disclaimer",
     "href": "index.html#disclaimer",
     "title": "R Built-in Datasets: Basic Concepts",
     "section": "Disclaimer",
-    "text": "Disclaimer\nThe information in this book is provided “as is” without warranty of any kind. The author assumes no responsibility for errors or omissions, or for damages resulting from the use of the information contained herein.",
+    "text": "Disclaimer\nThe information in this book is provided “as is” without warranty of any kind. The author assumes no responsibility for errors or omissions, or for damages resulting from the use of the information contained herein.\n© 2026 Ed Pal. All rights reserved.",
     "crumbs": [
       "Welcome"
     ]
@@ -274,7 +284,7 @@
     "href": "c060050.html#use",
     "title": "3  datasets package",
     "section": "3.6 Use",
-    "text": "3.6 Use\nUsing my_mtcars in R code is straightforward.\n\n3.6.0.1 base R\n\nresult &lt;- data.frame(\n  name = rownames(my_mtcars)[my_mtcars$cyl == 8],\n  my_mtcars[my_mtcars$cyl == 8, c(\"mpg\", \"cyl\")]\n)\nprint(result, row.names = FALSE)\n\n                name  mpg cyl\n   Hornet Sportabout 18.7   8\n          Duster 360 14.3   8\n          Merc 450SE 16.4   8\n          Merc 450SL 17.3   8\n         Merc 450SLC 15.2   8\n  Cadillac Fleetwood 10.4   8\n Lincoln Continental 10.4   8\n   Chrysler Imperial 14.7   8\n    Dodge Challenger 15.5   8\n         AMC Javelin 15.2   8\n          Camaro Z28 13.3   8\n    Pontiac Firebird 19.2   8\n      Ford Pantera L 15.8   8\n       Maserati Bora 15.0   8\n\n\nThe code above selects a few columns and filters for rows where the engine has 8 cylinders.\n\n\n3.6.0.2 dplyr\nEven though datasets in the datasets package are often used for learning base R, keep in mind their value for learning functions in many packages, such as dplyr.\nFirst, make dplyr available to the session.\n\nlibrary(dplyr)\n\nNow, you can use dplyr functions.\n\nmy_mtcars_df &lt;- mtcars %&gt;%\n  tibble::rownames_to_column(var = \"name\")\nresult_dplyr &lt;- my_mtcars_df %&gt;%\n  filter(cyl == 8) %&gt;%\n  select(name, mpg, cyl)\nprint(result_dplyr)\n\n                  name  mpg cyl\n1    Hornet Sportabout 18.7   8\n2           Duster 360 14.3   8\n3           Merc 450SE 16.4   8\n4           Merc 450SL 17.3   8\n5          Merc 450SLC 15.2   8\n6   Cadillac Fleetwood 10.4   8\n7  Lincoln Continental 10.4   8\n8    Chrysler Imperial 14.7   8\n9     Dodge Challenger 15.5   8\n10         AMC Javelin 15.2   8\n11          Camaro Z28 13.3   8\n12    Pontiac Firebird 19.2   8\n13      Ford Pantera L 15.8   8\n14       Maserati Bora 15.0   8\n\n\nThe code above this time uses dplyr functions, creating the same results.",
+    "text": "3.6 Use\nUsing my_mtcars in R code is straightforward.\n\n3.6.1 base R\n\nresult &lt;- data.frame(\n  name = rownames(my_mtcars)[my_mtcars$cyl == 8],\n  my_mtcars[my_mtcars$cyl == 8, c(\"mpg\", \"cyl\")]\n)\nprint(result, row.names = FALSE)\n\n                name  mpg cyl\n   Hornet Sportabout 18.7   8\n          Duster 360 14.3   8\n          Merc 450SE 16.4   8\n          Merc 450SL 17.3   8\n         Merc 450SLC 15.2   8\n  Cadillac Fleetwood 10.4   8\n Lincoln Continental 10.4   8\n   Chrysler Imperial 14.7   8\n    Dodge Challenger 15.5   8\n         AMC Javelin 15.2   8\n          Camaro Z28 13.3   8\n    Pontiac Firebird 19.2   8\n      Ford Pantera L 15.8   8\n       Maserati Bora 15.0   8\n\n\nThe code above selects a few columns and filters for rows where the engine has 8 cylinders.\n\n\n3.6.2 dplyr\nEven though datasets in the datasets package are often used for learning base R, keep in mind their value for learning functions in many packages, such as dplyr.\nFirst, make dplyr available to the session.\n\nlibrary(dplyr)\n\nNow, you can use dplyr functions.\n\nmy_mtcars_df &lt;- mtcars %&gt;%\n  tibble::rownames_to_column(var = \"name\")\nresult_dplyr &lt;- my_mtcars_df %&gt;%\n  filter(cyl == 8) %&gt;%\n  select(name, mpg, cyl)\nprint(result_dplyr)\n\n                  name  mpg cyl\n1    Hornet Sportabout 18.7   8\n2           Duster 360 14.3   8\n3           Merc 450SE 16.4   8\n4           Merc 450SL 17.3   8\n5          Merc 450SLC 15.2   8\n6   Cadillac Fleetwood 10.4   8\n7  Lincoln Continental 10.4   8\n8    Chrysler Imperial 14.7   8\n9     Dodge Challenger 15.5   8\n10         AMC Javelin 15.2   8\n11          Camaro Z28 13.3   8\n12    Pontiac Firebird 19.2   8\n13      Ford Pantera L 15.8   8\n14       Maserati Bora 15.0   8\n\n\nThe code above this time uses dplyr functions, creating the same results.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>datasets package</span>"
     ]
@@ -310,11 +320,11 @@
     ]
   },
   {
-    "objectID": "c060060.html#installed",
-    "href": "c060060.html#installed",
+    "objectID": "c060060.html#install",
+    "href": "c060060.html#install",
     "title": "4  Workflow",
-    "section": "4.3 Installed",
-    "text": "4.3 Installed\nCheck if the package is installed. If not install it.\ninstall.packages(\"packagename\")",
+    "section": "4.3 Install",
+    "text": "4.3 Install\nCheck if the package is installed. If not install it.\ninstall.packages(\"packagename\")\n\n\n\n\n\n\nNote\n\n\n\nThe next step assumes you already know the name of the dataset you want to load, e.g. starwars dataset.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Workflow</span>"
     ]
@@ -340,11 +350,21 @@
     ]
   },
   {
+    "objectID": "c060060.html#list",
+    "href": "c060060.html#list",
+    "title": "4  Workflow",
+    "section": "4.6 List",
+    "text": "4.6 List\nRun data() to list the datasets in the package.\nYou might find other datasets in that package you like as well.\ndata(package = \"packagename\")",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Workflow</span>"
+    ]
+  },
+  {
     "objectID": "c060060.html#wrap-up",
     "href": "c060060.html#wrap-up",
     "title": "4  Workflow",
-    "section": "5.1 Wrap-up",
-    "text": "5.1 Wrap-up\nThis bare-bones workflow will likely handle 80% of what you’ll need to do with built-in datasets.",
+    "section": "4.7 Wrap-up",
+    "text": "4.7 Wrap-up\nThis bare-bones workflow will likely handle 80% of what you’ll need to do with built-in datasets.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Workflow</span>"
     ]
@@ -414,7 +434,7 @@
     "href": "conclusion.html#final-thoughts",
     "title": "Conclusion",
     "section": "Final thoughts",
-    "text": "Final thoughts\nLearning R is a journey, and starting with its built-in datasets is a pivotal first step. These resources are more than just practice material; they provide essential insight into how R structures and interprets data. With this foundation, you are now equipped to work more efficiently across data analysis, visualization, and statistical modeling.",
+    "text": "Final thoughts\nLearning R is a journey, and starting with its built-in datasets is a pivotal first step. These resources are more than just practice material; they provide essential insight into how R structures and interprets data. With this foundation, you are now equipped to work more efficiently across data analysis, visualization, and statistical modeling.\nAgain, thank you for reading this book. Please consider dropping a note to ed123pal@gmail.com with your feedback.",
     "crumbs": [
       "Conclusion"
     ]

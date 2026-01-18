@@ -176,13 +176,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started"><span class="header-section-number">4.1</span> Getting Started</a></li>
   <li><a href="#identify" id="toc-identify" class="nav-link" data-scroll-target="#identify"><span class="header-section-number">4.2</span> Identify</a></li>
-  <li><a href="#installed" id="toc-installed" class="nav-link" data-scroll-target="#installed"><span class="header-section-number">4.3</span> Installed</a></li>
+  <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install"><span class="header-section-number">4.3</span> Install</a></li>
   <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load"><span class="header-section-number">4.4</span> Load</a></li>
   <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore"><span class="header-section-number">4.5</span> Explore</a></li>
-  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list"><span class="header-section-number">5</span> List</a>
-  <ul class="collapse">
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">5.1</span> Wrap-up</a></li>
-  </ul></li>
+  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list"><span class="header-section-number">4.6</span> List</a></li>
+  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="header-section-number">4.7</span> Wrap-up</a></li>
   </ul>
 </nav>
     </div>
@@ -216,10 +214,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="4.2" class="anchored" data-anchor-id="identify"><span class="header-section-number">4.2</span> Identify</h2>
 <p>Decide on the dataset you want to use and which package it’s in.</p>
 </section>
-<section id="installed" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="installed"><span class="header-section-number">4.3</span> Installed</h2>
+<section id="install" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="install"><span class="header-section-number">4.3</span> Install</h2>
 <p>Check if the package is installed. If not install it.</p>
 <p><code>install.packages("packagename")</code></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The next step assumes you already know the name of the dataset you want to load, e.g.&nbsp;starwars dataset.</p>
+</div>
+</div>
 </section>
 <section id="load" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="load"><span class="header-section-number">4.4</span> Load</h2>
@@ -232,17 +243,17 @@ ul.task-list li input[type="checkbox"] {
 <p><code>my_datasetname &lt;- datasetname</code></p>
 <p>Run functions on the copy to explore the dataset.</p>
 </section>
-<section id="list" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> List</h1>
+<section id="list" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="list"><span class="header-section-number">4.6</span> List</h2>
 <p>Run <code>data()</code> to list the datasets in the package.</p>
 <p><em>You might find other datasets in that package you like as well.</em></p>
 <p><code>data(package = "packagename")</code></p>
-<section id="wrap-up" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">5.1</span> Wrap-up</h2>
+</section>
+<section id="wrap-up" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="wrap-up"><span class="header-section-number">4.7</span> Wrap-up</h2>
 <p>This bare-bones workflow will likely handle 80% of what you’ll need to do with built-in datasets.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -659,19 +670,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Copyright © 2026 Ed Pal All rights reserved.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 
