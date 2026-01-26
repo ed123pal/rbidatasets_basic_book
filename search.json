@@ -10,26 +10,6 @@
     ]
   },
   {
-    "objectID": "index.html#online-and-pdf",
-    "href": "index.html#online-and-pdf",
-    "title": "R Built-in Datasets: Basic Concepts",
-    "section": "Online and PDF",
-    "text": "Online and PDF\nThe online version of this book can be viewed here.\nThe PDF version of this book can be downloaded here.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#feedback",
-    "href": "index.html#feedback",
-    "title": "R Built-in Datasets: Basic Concepts",
-    "section": "Feedback",
-    "text": "Feedback\nPlease share your feedback about this book. Your comments and suggestions for improvement will be appreciated. Just drop me note at ed123pal@gmail.com.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
     "objectID": "index.html#disclaimer",
     "href": "index.html#disclaimer",
     "title": "R Built-in Datasets: Basic Concepts",
@@ -444,7 +424,7 @@
     "href": "conclusion.html#final-thoughts",
     "title": "Conclusion",
     "section": "Final thoughts",
-    "text": "Final thoughts\nLearning R is a journey, and starting with its built-in datasets is a pivotal first step. These resources are more than just practice material; they provide essential insight into how R structures and interprets data. With this foundation, you are now equipped to work more efficiently across data analysis, visualization, and statistical modeling.\nAgain, thank you for reading this book. Please consider dropping a note to ed123pal@gmail.com with your feedback.",
+    "text": "Final thoughts\nLearning R is a journey, and starting with its built-in datasets is a pivotal first step. These resources are more than just practice material; they provide essential insight into how R structures and interprets data. With this foundation, you are now equipped to work more efficiently across data analysis, visualization, and statistical modeling.",
     "crumbs": [
       "Conclusion"
     ]
